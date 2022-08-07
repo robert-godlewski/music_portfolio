@@ -9,17 +9,19 @@ ReleaseData = {
     release_date: Date,
     album_artwork: String - image link,
     stream_links: [Strings - links to streaming services]
+    upc_code: String
     artists: [..., ArtistData],
-    songs: [..., SongData],
-    ...other information here
+    songs: [..., SongData]
 }
 
 SongData = {
     title: String,
+    stream_links: [Strings - links to streaming services]
+    written_date: Date,
+    copyright_date: Date
+    isrc_code: String
     composers: [..., ArtistData],
     releases: [..., ReleaseData],
-    stream_links: [Strings - links to streaming services]
-    ...other information here
 }
 
 ArtistData = {

@@ -10,7 +10,7 @@ module.exports = {
         })
         .catch((err) => {
             console.log("Something went wrong in CreateProject on server end.");
-            req.status(400).json(err);
+            res.status(400).json(err);
         });
     },
 
